@@ -1,0 +1,8 @@
+  }
+
+    public void Login(string username, string password) {
+        if (users.ContainsKey(username)) {
+            users[username].Authenticate(username, password);
+        } else {
+            Console.WriteLine("User not found. Login failed.");
+        }
